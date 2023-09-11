@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE TVSCHEDULE[
+<!ELEMENT TVSCHEDULE (Channel+)>
+<!ELEMENT channel (banner, day+)>
+<!ELEMENT banner (#PCDATA)>
+<!ELEMENT day (date, (holiday | programslot)+)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT programslot (time, title, description?)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ATTLIST TVSCHEDULE Name CDATA #REQUIRED>
+<!ATTLIST channel Chan CDATA #REQUIRED>
+<!ATTLIST programslot Vtr #IMPLIED>
+<!ATTLIST title 
+Rating CDATA #IMPLIED
+Language CDATA #IMPLIED
+>
+]>
+<TVSCHEDULE Name="SampleTVSchedule">
+    <Channel Chan="Star Sports 4">
+        <banner>Banner Text</banner>
+        <day>
+            <date>2023-09-11</date>
+            <programslot Vtr="1234">
+                <time>08:00 AM</time>
+                <title>Title 1</title>
+                <description>Description for Title 1</description>
+            </programslot>
+            <programslot>
+                <time>09:00 AM</time>
+                <title>Title 2</title>
+            </programslot>
+        </day>
+    </Channel>
+</TVSCHEDULE>
