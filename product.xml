@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="product.xsl" type="text/xsl"?>
+<products>
+    <product>
+      <productname>Chicken</productname>
+      <category>Meat</category>
+      <price>3500</price>
+      <quantity>12</quantity>
+    </product>
+    <product>
+      <productname>Mango</productname>
+      <category>Fruits</category>
+      <price>650</price>
+      <quantity>5</quantity>
+    </product>
+    <product>
+      <productname>Potato</productname>
+      <category>Vegetable</category>
+      <price>320</price>
+      <quantity>8</quantity>
+    </product>
+    <product>
+      <productname>Spoon</productname>
+      <category>Utensils</category>
+      <price>2000</price>
+      <quantity>15</quantity>
+    </product>
+    <product>
+      <productname>Cetamol</productname>
+      <category>Healthcare</category>
+      <price>120</price>
+      <quantity>20</quantity>
+    </product>
+  </products>
+  
